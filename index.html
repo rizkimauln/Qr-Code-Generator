@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>QR Code Generator | Proyek UAS</title>
+    <link rel="icon logo" href="/Logo.png" <meta charset="UTF-8" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar strat -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">QR Code<span> Generator.</span></a>
+      <div class="navbar-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+    <!-- Hero Section Strart -->
+    <section class="hero" id="home">
+      <main class="content">
+        <div class="box">
+          <div class="qr-header">
+            <h1>Generator Code</h1>
+            <p>Tempel URL Atau Masukkan Teks Untuk Membuat Kode QR</p>
+            <input
+              type="text"
+              placeholder="Masukkan teks atau URL"
+              id="qr-text"
+            />
+            <div>
+              <label for="size">Pilih Ukuran :</label>
+              <select name="" id="sizes">
+                <option value="100">100x100</option>
+                <option value="300">300x300</option>
+                <option value="600">600x600</option>
+                <option value="600">900x900</option>
+              </select>
+            </div>
+          </div>
+          <div class="qr-body"></div>
+          <div class="qr-footer">
+            <a href="#" id="generateBtn">Generate</a>
+            <a href="#" id="downloadBtn" download="QR_Code.png">Download</a>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+    <!-- About Start -->
+    <section id="about" class="about">
+      <div class="row">
+        <div class="about-img">
+          <img src="img/Hiasan.png" alt="" />
+        </div>
+        <div class="judul">
+          <h3>What is a QR Code?</h3>
+          <p>
+            QR Code adalah singkatan dari Quick Response Code, sebuah kode 2
+            dimensi yang dapat menyimpan banyak informasi. Untuk membukanya,
+            dibutuhkan scan atau pemindaian dengan smartphone. QR Code Sering
+            dimanfaatkan dalam beberapa bidang, seperti bidang advertising,
+            marketing bahkan biasa digunakan untuk mengkodekan teks alamat
+            website dan yang lainnya
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+    <!-- Footer Start -->
+    <footer>
+      <div class="sosial">
+        <a href="https://www.instagram.com/rizki.mauln"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://wa.me/62857973880528"
+          ><i data-feather="message-square"></i
+        ></a>
+        <a
+          href="https://web.facebook.com/profile.php?id=100091405470113&sk=about&locale=id_ID"
+          ><i data-feather="facebook"></i
+        ></a>
+        <a href="mailto:rm.rizki.mauln@gmail.com"
+          ><i data-feather="mail"></i
+        ></a>
+        <a href="https://www.youtube.com/@heiryzz"
+          ><i data-feather="youtube"></i
+        ></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="watermark">
+        <p>Created by <a href="">Rizki Maulana.</a>|&copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="js/script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
